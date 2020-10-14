@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaSearch } from 'react-icons/fa'
 
 const StyledLink = styled.a`
     font-family: 'Noto Sans JP',Arial,sans-serif;
@@ -26,6 +27,29 @@ const NavDiv = styled.div`
     height: 55px;
 `
 
-export { StyledLink, NavDiv };
+const StSearch = styled(FaSearch)`
+  margin-bottom: -15px;
+  color: #fff;
+`
+
+const StSpanSearch = styled.span`
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    color: #878585;
+    bottom: 19px;
+    width: 120px;
+    line-height: 18px;
+    left: 26px;
+    border-bottom: 1.5px solid #fff;
+    font-size: 13px;
+    &:hover {
+      color: #784;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+`
+
+export { StyledLink, NavDiv, StSearch, StSpanSearch };
 
 
